@@ -17,7 +17,22 @@ public class LetCodeTest extends BaseSelenideTest {
                 .openInputPage()
                 .enterFullName(FULL_NAME)
                 .appendTextToIAmGoodAndTab(appendText)
-                .checkValueAfterTab(value);
+                .checkValueAfterTab(value)
+                .clearMe()
+                .checkIsDisabled()
+                .checkNoEdit();
 
+    }
+    @Test
+    public void testButtonPage() {
+        Selenide.open(URL);
+        new MainPage()
+                .openButtonPage()
+                .checkGoToHome()
+                .checkFindLocation()
+                .checkMyColor()
+                .checkTallFat()
+                .checkDisableButton()
+                .checkHoldButton();
     }
 }

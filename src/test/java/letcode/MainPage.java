@@ -8,11 +8,11 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class MainPage {
     private final SelenideElement input = $x("//a[contains(text(), 'Edit')]").shouldBe(visible);
+    private final SelenideElement click = $x("//a[contains(text(), 'Click')]").shouldBe(visible);
 
-
-    public MainPage(){
-
-
+    public ButtonPage openButtonPage() {
+        click.click();
+        return new ButtonPage();
     }
     public InputPage openInputPage() {
         input.click();

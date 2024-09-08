@@ -10,7 +10,7 @@ import org.junit.jupiter.api.BeforeEach;
 public class BaseSelenideTest {
 
     @BeforeEach
-    public void setUp(){
+    public void setUp() {
 //        WebDriverManager.chromedriver().setup();
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
@@ -21,7 +21,7 @@ public class BaseSelenideTest {
     }
 
     @AfterEach
-    public void tearDown(){
+    public void tearDown() {
         Selenide.closeWebDriver();
     }
 }
