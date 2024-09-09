@@ -23,6 +23,7 @@ public class LetCodeTest extends BaseSelenideTest {
                 .checkNoEdit();
 
     }
+
     @Test
     public void testButtonPage() {
         Selenide.open(URL);
@@ -34,5 +35,55 @@ public class LetCodeTest extends BaseSelenideTest {
                 .checkTallFat()
                 .checkDisableButton()
                 .checkHoldButton();
+    }
+
+    @Test
+    public void testSelectPage() {
+        Selenide.open(URL);
+        new MainPage()
+                .openSelectPage()
+                .selectFruit()
+                .selectSuperHero()
+                .selectProgrammingLanguageAndPrintAll()
+                .selectCountryByIndexAndPrint();
+
+    }
+
+    @Test
+    public void testAlertPage() {
+        Selenide.open(URL);
+        new MainPage()
+                .openAlertPage()
+                .clickSimpleAlertButtonCheckTextAndAccept()
+                .clickConfirmAlertButtonPrintAndDismiss()
+                .clickPromptAlertButtonSendKeysAndCheckName()
+                .clickModernAlertButtonCheckTextAndClose();
+
+    }
+
+    @Test
+    public void testFramePage() {
+        Selenide.open(URL);
+        new MainPage()
+                .openFramePage()
+                .setFirstAndLastNameAndCheck()
+                .setEmailAndCheck();
+
+    }
+
+    @Test
+    public void testRadioPage() {
+        Selenide.open(URL);
+        new MainPage()
+                .openRadioPage()
+                .clickYesOnSelectAnyOne()
+                .clickOnlyOneRadioButtonAndCheckSelected()
+                .findBug()
+                .whichOneIsSelected()
+                .lastFieldDisabled()
+                .rememberMeCheckBox()
+                .termsAndConditionsBox();
+
+
     }
 }
