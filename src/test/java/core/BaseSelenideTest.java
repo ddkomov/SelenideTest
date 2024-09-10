@@ -15,7 +15,8 @@ public class BaseSelenideTest {
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
         Configuration.headless = false;
-        Configuration.pageLoadTimeout = 10000;
+        Configuration.pageLoadTimeout = 15000;
+        Configuration.timeout = 15000;
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
     }

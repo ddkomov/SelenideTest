@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3cc2b73-0c33-43e1-a2ec-fd2bffa31394" name="Changes" comment="add Tests">
+    <list default="true" id="d3cc2b73-0c33-43e1-a2ec-fd2bffa31394" name="Changes" comment="new Tests added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/core/BaseSelenideTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/core/BaseSelenideTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/letcode/LetCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/letcode/LetCodeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/letcode/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/letcode/MainPage.java" afterDir="false" />
     </list>
@@ -77,12 +78,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build SelenideTest.executor": "Run",
     "Gradle.LetCodeTest.testAlertPage.executor": "Run",
     "Gradle.LetCodeTest.testButtonPage.executor": "Run",
+    "Gradle.LetCodeTest.testDragPage.executor": "Run",
+    "Gradle.LetCodeTest.testDropPage.executor": "Run",
+    "Gradle.LetCodeTest.testElementsPage.executor": "Run",
     "Gradle.LetCodeTest.testFramePage.executor": "Run",
     "Gradle.LetCodeTest.testInputPage.executor": "Run",
     "Gradle.LetCodeTest.testRadioPage.executor": "Run",
     "Gradle.LetCodeTest.testSelectPage.executor": "Run",
+    "Gradle.LetCodeTest.testSelectablePage.executor": "Run",
+    "Gradle.LetCodeTest.testSliderPage.executor": "Run",
+    "Gradle.LetCodeTest.testSortPage.executor": "Run",
+    "Gradle.LetCodeTest.testTabsPage.executor": "Run",
+    "Gradle.LetCodeTest.testWindowsPage.executor": "Run",
     "Gradle.SelenideTest [allureReport].executor": "Run",
     "Gradle.SelenideTest [allureServe].executor": "Run",
     "Gradle.SelenideTest [assemble].executor": "Run",
@@ -92,11 +102,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Asus/IdeaProjects/SelenideTest"
+    "last_opened_file_path": "C:/Users/Asus/IdeaProjects/JavaAppiumAutomation1"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.LetCodeTest.testRadioPage">
-    <configuration name="LetCodeTest.testAlertPage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.LetCodeTest.testTabsPage">
+    <configuration name="LetCodeTest.testSelectablePage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -109,7 +119,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;letcode.LetCodeTest.testAlertPage&quot;" />
+            <option value="&quot;letcode.LetCodeTest.testSelectablePage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -120,7 +130,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LetCodeTest.testRadioPage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LetCodeTest.testSliderPage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -133,7 +143,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;letcode.LetCodeTest.testRadioPage&quot;" />
+            <option value="&quot;letcode.LetCodeTest.testSliderPage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -144,48 +154,52 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SelenideTest [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LetCodeTest.testSortPage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="allureServe" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;letcode.LetCodeTest.testSortPage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SelenideTest [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LetCodeTest.testTabsPage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;letcode.LetCodeTest.testTabsPage&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="SelenideTest [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -212,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LetCodeTest.testRadioPage" />
-        <item itemvalue="Gradle.LetCodeTest.testAlertPage" />
-        <item itemvalue="Gradle.SelenideTest [allureServe]" />
-        <item itemvalue="Gradle.SelenideTest [build]" />
+        <item itemvalue="Gradle.LetCodeTest.testTabsPage" />
+        <item itemvalue="Gradle.LetCodeTest.testSliderPage" />
+        <item itemvalue="Gradle.LetCodeTest.testSelectablePage" />
         <item itemvalue="Gradle.SelenideTest [clean]" />
+        <item itemvalue="Gradle.LetCodeTest.testSortPage" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725823488498</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new Tests added">
+      <option name="closed" value="true" />
+      <created>1725886087468</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725886087468</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +275,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Tests" />
+    <MESSAGE value="new Tests added" />
+    <option name="LAST_COMMIT_MESSAGE" value="new Tests added" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -261,5 +284,8 @@
         <watch expression="((ElementFinder)((SelenideElementProxy)this.h).webElementSource).criteria" custom="java.lang.reflect.Proxy,com.codeborne.selenide.impl.SelenideElementProxy,com.codeborne.selenide.impl.ElementFinder" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SelenideTest$LetCodeTest_testElementsPage.ic" NAME="LetCodeTest.testElementsPage Coverage Results" MODIFIED="1725904810257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

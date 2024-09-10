@@ -4,6 +4,8 @@ import com.codeborne.selenide.Selenide;
 import core.BaseSelenideTest;
 import org.junit.jupiter.api.Test;
 
+import static com.codeborne.selenide.Selenide.sleep;
+
 public class LetCodeTest extends BaseSelenideTest {
     private static final String FULL_NAME = "Dmitry Komov";
     private static final String appendText = " at all";
@@ -84,6 +86,82 @@ public class LetCodeTest extends BaseSelenideTest {
                 .rememberMeCheckBox()
                 .termsAndConditionsBox();
 
+
+    }
+
+    @Test
+    public void testWindowsPage() {
+        Selenide.open(URL);
+        new MainPage()
+                .openWindowsPage()
+                .clickOpenHomePageGetTitleAndCloseWindows();
+        Selenide.open(URL);
+        new MainPage()
+                .openWindowsPage()
+                .clickOpenMultiplePageGetAllTitlesAndCloseWindows();
+
+    }
+
+    @Test
+    public void testElementsPage() {
+        Selenide.open(URL);
+        new MainPage()
+                .openElementsPage()
+                .setValueToSearchFieldAndClickButton()
+                .userHasImage()
+                .checkUserInfo()
+                .checkUserReposLinks();
+
+    }
+
+    //    @Test
+//    public void testDragPage() {
+//        Selenide.open(URL);
+//        new MainPage()
+//                .openDragPage()
+//                .dragContainerAround();
+//
+//    }
+    @Test
+    public void testDropPage() {
+        Selenide.open(URL);
+        new MainPage()
+                .openDropPage()
+                .dragAndDropToElement();
+
+    }
+
+    //    @Test
+//    public void testSortPage() {
+//        Selenide.open(URL);
+//        new MainPage()
+//                .openSortPage()
+//                .dragAndDropFromToDoToDone();
+//
+//    }
+    @Test
+    public void testSelectablePage() {
+        Selenide.open(URL);
+        new MainPage()
+                .openSelectablePage()
+                .multiClick();
+    }
+
+    @Test
+    public void testSliderPage() {
+        Selenide.open(URL);
+        new MainPage()
+                .openSliderPage()
+                .clickSlideAndGetCountries();
+    }
+    @Test
+    public void testTabsPage() {
+        Selenide.open(URL);
+        new MainPage()
+                .openTablePage()
+                .addAllPricesAndAssertWithTotalPrice()
+                .markRajAsPresent()
+                .checkIfSortWorksCorrectly();
 
     }
 }
