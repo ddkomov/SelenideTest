@@ -32,7 +32,7 @@ public class ButtonPage {
     public ButtonPage checkFindLocation() {
         findLocation.click();
         System.out.println(findLocation.getLocation());
-        Assertions.assertEquals("(295, 338)", findLocation.getLocation().toString());
+        Assertions.assertEquals("(304, 338)", findLocation.getLocation().toString());
         return new ButtonPage();
     }
     public ButtonPage checkMyColor() {

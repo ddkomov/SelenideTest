@@ -14,7 +14,7 @@ public class BaseSelenideTest {
 //        WebDriverManager.chromedriver().setup();
         Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
-        Configuration.headless = false;
+        Configuration.headless = true;
         Configuration.pageLoadTimeout = 15000;
         Configuration.timeout = 15000;
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());

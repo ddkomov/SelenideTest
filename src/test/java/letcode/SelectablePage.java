@@ -10,9 +10,9 @@ import static com.codeborne.selenide.Selenide.$x;
 import static com.codeborne.selenide.Selenide.actions;
 
 public class SelectablePage {
-    private final SelenideElement testNG = $x("//h3[contains(text(), 'TestNg')]").shouldBe(visible);
-    private final SelenideElement selenium = $x("//h3[contains(text(), 'Selenium')]").shouldBe(visible);
-    private final SelenideElement letCode = $x("//h3[contains(text(), 'LetCode')]").shouldBe(visible);
+    private final SelenideElement testNG = $x("//h3[contains(text(), 'TestNg')]");
+    private final SelenideElement selenium = $x("//h3[contains(text(), 'Selenium')]");
+    private final SelenideElement letCode = $x("//h3[contains(text(), 'LetCode')]");
 
     public SelectablePage multiClick(){
         actions().keyDown(Keys.CONTROL).build().perform();

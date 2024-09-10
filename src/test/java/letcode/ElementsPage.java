@@ -22,8 +22,8 @@ public class ElementsPage {
 
 
     public ElementsPage setValueToSearchFieldAndClickButton() {
-        searchField.click();
-        searchField.clear();
+//        searchField.click();
+//        searchField.clear();
         searchField.sendKeys(username);
         searchButton.click();
         System.out.println(searchField.getValue());
@@ -46,14 +46,15 @@ public class ElementsPage {
     public ElementsPage checkUserReposLinks() {
         List<SelenideElement> listUserRepos = userRepos.stream().toList();
         sleep(1500);
-        int countRepos = Integer.valueOf(countPublicRepos.getText());
+        int countRepos = Integer.parseInt(countPublicRepos.getText());
         sleep(1500);
         int countReposLinks = listUserRepos.size();
         sleep(2000);
-        Assertions.assertEquals(countRepos, countReposLinks, "Number of repos is different");
         for (SelenideElement element : listUserRepos) {
             System.out.println(element.getAttribute("href"));
         }
+        Assertions.assertEquals(countRepos, countReposLinks, "Number of repos is different");
+
         return this;
     }
 
