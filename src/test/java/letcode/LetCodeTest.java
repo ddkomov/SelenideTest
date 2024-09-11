@@ -154,6 +154,7 @@ public class LetCodeTest extends BaseSelenideTest {
                 .openSliderPage()
                 .clickSlideAndGetCountries();
     }
+
     @Test
     public void testTabsPage() {
         Selenide.open(URL);
@@ -163,5 +164,26 @@ public class LetCodeTest extends BaseSelenideTest {
                 .markRajAsPresent()
                 .checkIfSortWorksCorrectly();
 
+    }
+
+    @Test
+    public void testFilePage() {
+        Selenide.open(URL);
+        new MainPage()
+                .openFilePage()
+                .uploadFile()
+                .downloadPDFFile()
+                .downloadExcelFile()
+                .downloadTXTFile();
+    }
+
+    @Test
+    public void testShadowPage() {
+        Selenide.open("https://letcode.in/shadow");
+//        new MainPage()
+//                .openShadowPage()
+        new ShadowPage()
+                .fillFnameShadowOpen()
+                .fillLnameShadowClosed();
     }
 }

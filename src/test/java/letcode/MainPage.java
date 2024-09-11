@@ -23,6 +23,8 @@ public class MainPage {
     private final SelenideElement AUI4 = $x("//a[contains(text(), 'AUI - 4')]").shouldBe(visible);
     private final SelenideElement AUI5 = $x("//a[contains(text(), 'AUI - 5')]").shouldBe(visible);
     private final SelenideElement simpleTable = $x("//a[contains(text(), 'Simple table')]").shouldBe(visible);
+    private final SelenideElement file = $x("//a[contains(text(), 'File management')]").shouldBe(visible);
+    private final SelenideElement DOM = $x("//a[contains(text(), 'DOM')]").shouldBe(visible);
 
     public ButtonPage openButtonPage() {
         click.click();
@@ -82,5 +84,13 @@ public class MainPage {
     public TablePage openTablePage() {
         actions().moveToElement(simpleTable).click().build().perform();
         return new TablePage();
+    }
+    public FilePage openFilePage() {
+        actions().moveToElement(file).click().build().perform();
+        return new FilePage();
+    }
+    public ShadowPage openShadowPage() {
+        actions().moveToElement(DOM).click().build().perform();
+        return new ShadowPage();
     }
 }

@@ -23,6 +23,8 @@ dependencies {
     testImplementation("io.qameta.allure:allure-assertj:2.25.0")
     testImplementation("io.qameta.allure:allure-java-commons:2.25.0")
     testImplementation("org.slf4j:slf4j-api:2.0.13")
+    testImplementation("com.codeborne:selenide-proxy:7.4.0")
+
 
 
 

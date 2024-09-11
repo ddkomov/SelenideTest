@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: de.sstoehr:har-reader:2.3.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="de.sstoehr" artifactId="har-reader" version="2.3.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.sstoehr/har-reader/2.3.0/a8759484b206a49c4ddae2fd6e8d0f8b4d8d7040/har-reader-2.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
